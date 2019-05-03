@@ -8,8 +8,8 @@ class iOSTests(unittest.TestCase):
     def setUp(self):
         desired_caps = {}
         desired_caps['platformName'] = 'iOS'
-        desired_caps['platformVersion'] = '10.2'
-        desired_caps['deviceName'] = 'Apple iPhone 6s Plus'
+        desired_caps['platformVersion'] = '8.2'
+        desired_caps['deviceName'] = 'iPhone Simulator'
         desired_caps['app'] = os.path.join(os.environ.get("GREENHOUSE_SYMROOT"),
                                            "Debug-iphoneos/testMasterDetail.app")
         self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
