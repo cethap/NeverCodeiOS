@@ -15,6 +15,7 @@
 		C800E4C8227792E50007B07D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C800E4C6227792E50007B07D /* LaunchScreen.storyboard */; };
 		C800E4D3227792E50007B07D /* testMasterDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C800E4D2227792E50007B07D /* testMasterDetailTests.swift */; };
 		C800E4DF227798E10007B07D /* python in Resources */ = {isa = PBXBuildFile; fileRef = C800E4DE227798E10007B07D /* python */; };
+		C8C664CF2280C6B10094FA74 /* builds in Resources */ = {isa = PBXBuildFile; fileRef = C8C664CE2280C6B10094FA74 /* builds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		C800E4D2227792E50007B07D /* testMasterDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testMasterDetailTests.swift; sourceTree = "<group>"; };
 		C800E4D4227792E50007B07D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C800E4DE227798E10007B07D /* python */ = {isa = PBXFileReference; lastKnownFileType = folder; path = python; sourceTree = "<group>"; };
+		C8C664CE2280C6B10094FA74 /* builds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = builds; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		C800E4DD227798AC0007B07D /* appium */ = {
 			isa = PBXGroup;
 			children = (
+				C8C664CE2280C6B10094FA74 /* builds */,
 				C800E4DE227798E10007B07D /* python */,
 			);
 			path = appium;
@@ -191,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8C664CF2280C6B10094FA74 /* builds in Resources */,
 				C800E4DF227798E10007B07D /* python in Resources */,
 				C800E4C8227792E50007B07D /* LaunchScreen.storyboard in Resources */,
 				C800E4C5227792E50007B07D /* Assets.xcassets in Resources */,
