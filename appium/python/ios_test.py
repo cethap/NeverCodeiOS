@@ -10,9 +10,9 @@ class iOSTests(unittest.TestCase):
         desired_caps['platformName'] = 'iOS'
         desired_caps['platformVersion'] = '8.2'
         desired_caps['deviceName'] = 'iPhone Simulator'
-        desired_caps['app'] = os.path.join(os.environ.get("GREENHOUSE_SYMROOT"),
-                                           "Debug-iphoneos/testMasterDetail.app")
-        self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
+        desired_caps['app'] = os.path.join(os.environ.get("NEVERCODE_BUILD_DIR"),
+                                           "build/Release-iphoneos/testMasterDetail.app")
+        self.driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
 
     def tearDown(self):
         # end the session
