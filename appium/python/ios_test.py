@@ -25,5 +25,7 @@ class iOSTests(unittest.TestCase):
 
 
 if __name__ == '__main__':
+    import xmlrunner
     suite = unittest.TestLoader().loadTestsFromTestCase(iOSTests)
     unittest.TextTestRunner(verbosity=3).run(suite)
+    unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-reports'))
