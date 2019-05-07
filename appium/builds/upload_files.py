@@ -25,5 +25,6 @@ runCommand('curl -T test.zip '+urlAut)
 
 devicePool = "arn:aws:devicefarm:us-west-2:655603536603:devicepool:fc6f6e31-7c1e-49dd-b212-03739b00dcb1/e7f54231-110f-467e-8238-a93da29336e0"
 testStructure = "type=APPIUM_JAVA_TESTNG,testPackageArn="+arnAut+",testSpecArn=arn:aws:devicefarm:us-west-2::upload:4f8bd338-7be5-11e8-adc0-fa7ae01bbebc"
-data = runCommandJson('aws devicefarm schedule-run --project-arn arn:aws:devicefarm:us-west-2:655603536603:project:fc6f6e31-7c1e-49dd-b212-03739b00dcb1 --app-arn '+arnApp+' --device-pool-arn '+devicePool+' --test '+testStructure)
+executionConfiguration = "jobTimeoutMinutes=150,videoCapture=true,skipAppResign=false"
+data = runCommandJson('aws devicefarm schedule-run --project-arn arn:aws:devicefarm:us-west-2:655603536603:project:fc6f6e31-7c1e-49dd-b212-03739b00dcb1 --app-arn '+arnApp+' --device-pool-arn '+devicePool+' --execution-configuration '+executionConfiguration+' --test '+testStructure)
 print(data)
