@@ -21,7 +21,7 @@ class iOSTests(unittest.TestCase):
         self.assertTrue(True)
 
     def test_assert_false(self):
-        self.assertTrue(False)
+        self.assertFalse(False)
         
     def test_assert_otro(self):
         self.assertTrue(True)
