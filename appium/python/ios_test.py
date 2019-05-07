@@ -22,6 +22,9 @@ class iOSTests(unittest.TestCase):
 
     def test_assert_false(self):
         self.assertTrue(False)
+        
+    def test_assert_otro(self):
+        self.assertTrue(True)
 
 
 if __name__ == '__main__':
